@@ -98,6 +98,7 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Count Down Timer";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.spnMinutes)).EndInit();
             this.ResumeLayout(false);
 

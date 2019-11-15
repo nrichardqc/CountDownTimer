@@ -85,7 +85,6 @@
     <None Include="bell.wav" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="hourglass-done.ico" />
     <Content Include="timer.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
