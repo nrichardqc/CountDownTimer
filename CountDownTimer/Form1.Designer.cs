@@ -66,15 +66,17 @@
             // lblRemaining
             // 
             this.lblRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRemaining.Location = new System.Drawing.Point(22, 38);
+            this.lblRemaining.Location = new System.Drawing.Point(12, 41);
             this.lblRemaining.Name = "lblRemaining";
-            this.lblRemaining.Size = new System.Drawing.Size(200, 73);
+            this.lblRemaining.Size = new System.Drawing.Size(224, 84);
             this.lblRemaining.TabIndex = 2;
             this.lblRemaining.Text = "00:00";
-            this.lblRemaining.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblRemaining.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPause
             // 
+            this.btnPause.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnPause.Enabled = false;
             this.btnPause.Location = new System.Drawing.Point(150, 12);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(75, 23);
@@ -85,9 +87,11 @@
             // 
             // frmPrincipal
             // 
+            this.AcceptButton = this.btnStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 107);
+            this.CancelButton = this.btnPause;
+            this.ClientSize = new System.Drawing.Size(231, 125);
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.lblRemaining);
             this.Controls.Add(this.btnStart);
@@ -96,6 +100,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
+            this.Opacity = 0.85D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Count Down Timer";
             this.TopMost = true;

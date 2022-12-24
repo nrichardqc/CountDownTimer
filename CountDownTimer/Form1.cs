@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Media;
@@ -65,6 +60,7 @@ namespace CountDownTimer
         private void btnStart_Click(object sender, EventArgs e)
         {
             btnPause.Text = PAUSE;
+            btnPause.Enabled = true;
             m_Remainging = Convert.ToInt32(spnMinutes.Value) * 60 * 1000;
             RefreshUI();
             m_Timer.Start();
